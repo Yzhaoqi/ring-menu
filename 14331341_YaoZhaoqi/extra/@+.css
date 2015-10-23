@@ -1,0 +1,270 @@
+﻿body{
+    height: 700px;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/*for all list*/
+li {
+    list-style-type: none;
+}
+
+#info-bar {
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 64px;
+    -moz-border-radius: 64px;
+    -webkit-border-radius: 64px;
+    position: absolute;
+    left: 288.5px;      /*original-left 348.5*/
+    bottom: 284.5px;    /*original-buttom 248.5*/
+}
+
+#info-bar ul {
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+#info-bar li {
+    margin-bottom: 2px;
+}
+
+#info-bar span {
+    vertical-align: 6px;
+}
+
+#info-bar img {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+.page {
+    color: white;
+    width: 128px;
+    display: block;
+}
+
+.mine {
+    color: #29D696;
+    width: 64px;
+    display: inline;
+}
+
+.comment {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#control-ring li {
+    text-align: center;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    position: absolute;
+}
+
+/*every list background-image*/
+.mask {
+    background-image: url(assets/images/nomask.png);
+    left: 324.5px;
+    bottom: 296.5px;
+}
+
+.history {
+    background-image: url(assets/images/history.png);
+    left: 336.5px;
+    bottom: 256.5px;
+}
+
+.message {
+    background-image: url(assets/images/message.png);
+    left: 372.5px;
+    bottom: 232.5px;
+}
+
+.setting {
+    background-image: url(assets/images/setting.png);
+    left: 416.5px;
+    bottom: 236.5px;
+}
+
+.sign {
+    background-image: url(assets/images/signin.png);
+    left: 416.5px;
+    bottom: 236.5px;
+}
+
+.message .unread {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+.icon {
+    background-color: rgb(150, 160, 210);
+    background-image: url(assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    left: 387.5px;
+    bottom: 287.5px;
+}
+
+/*all animation*/
+
+#button:hover .icon {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    background-image: url(assets/images/atplus_green.png);
+    background-size: 75% 55%;
+    background-color: rgba(48, 63, 159, 1);
+}
+
+#button .icon {
+    transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    transition-delay: 2.6s;
+    -moz-transition-delay: 2.6s;
+    -webkit-transition-delay: 2.6s;
+}
+
+#button:hover #info-bar {
+    transform : translate(60px, -64.5px) scale(1);
+    -moz-transform: translate(60px, -64.5px) scale(1);
+    -webkit-transform: translate(60px, -64.5px) scale(1);
+    transition-delay: 2.6s;
+    -moz-transition-delay: 2.6s;
+    -webkit-transition-delay: 2.6s;
+}
+
+#info-bar {
+    transition-delay: 0;
+    -moz-transition-delay: 0;
+    -webkit-transition-delay: 0;
+}
+
+#button:hover .sign {
+    transform: translate(0) scale(1);
+    -moz-transform: translate(0) scale(1);
+    -webkit-transform: translate(0) scale(1);
+    transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -webkit-transition-delay: 0.6s;
+}
+
+.sign {
+    transition-delay: 2.0s;
+    -moz-transition-delay: 2.0s;
+    -webkit-transition-delay: 2.0s;
+}
+
+#button:hover .setting {
+    transform: translate(-44px, 4px) scale(1);
+    -moz-transform: translate(-44px, 4px) scale(1);
+    -webkit-transform: translate(-44px, 4px) scale(1);
+    transition-delay: 1.0s;
+    -moz-transition-delay: 1.0s;
+    -webkit-transition-delay: 1.0s;
+}
+
+.setting {
+    transition-delay: 1.6s;
+    -moz-transition-delay: 1.6s;
+    -webkit-transition-delay: 1.6s;
+}
+
+#button:hover .message {
+    transform: translate(-36px, -24px) scale(1);
+    -moz-transform: translate(-36px, -24px) scale(1);
+    -webkit-transform: translate(-36px, -24px) scale(1);
+    transition-delay: 1.4s;
+    -moz-transition-delay: 1.4s;
+    -webkit-transition-delay: 1.4s;
+}
+
+.message {
+    transition-delay: 1.2s;
+    -moz-transition-delay: 1.2s;
+    -webkit-transition-delay: 1.2s;
+}
+
+#button:hover .history  {
+    transform: translate(-12px, -40px) scale(1);
+    -moz-transform: translate(-12px, -40px) scale(1);
+    -webkit-transform: translate(-12px, -40px) scale(1);
+    transition-delay: 1.8s;
+    -moz-transition-delay: 1.8s;
+    -webkit-transition-delay: 1.8s;
+}
+
+.history {
+    transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
+}
+
+#button:hover .mask {
+    transform: translate(12px, -36px) scale(1);
+    -moz-transform: translate(12px, -36px) scale(1);
+    -webkit-transform: translate(12px, -36px) scale(1);
+    transition-delay: 2.2s;
+    -moz-transition-delay: 2.2s;
+    -webkit-transition-delay: 2.2s;
+}
+
+.mask {
+    transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s;
+}
+
+#button:hover #info-bar, #button:hover .button  {
+    opacity: 1;
+}
+
+#button #info-bar, #button .button {
+    transform: translate(0) scale(0);
+    -moz-transform: translate(0) scale(0);
+    -webkit-transform: translate(0) scale(0);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    opacity: 0;
+}

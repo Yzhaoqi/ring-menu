@@ -1,0 +1,215 @@
+﻿body{
+    height: 700px;
+    width: 100%;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/*for all list*/
+li {
+    list-style-type: none;
+}
+
+#info-bar {
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 64px;
+    -moz-border-radius: 64px;
+    -webkit-border-radius: 64px;
+    position: absolute;
+    left: 348.5px;
+    bottom: 248.5px;
+}
+
+#info-bar ul {
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+#info-bar li {
+    margin-bottom: 2px;
+}
+
+#info-bar span {
+    vertical-align: 6px;
+}
+
+#info-bar img {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+.page {
+    color: white;
+    width: 128px;
+    display: block;
+}
+
+.mine {
+    color: #29D696;
+    width: 64px;
+    display: inline;
+}
+
+.comment {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#control-ring li {
+    text-align: center;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    position: absolute;
+    left: 396.5px;
+    bottom: 296.5px;
+}
+
+/*every list background-image*/
+.mask {
+    background-image: url(assets/images/nomask.png);
+}
+
+.history {
+    background-image: url(assets/images/history.png);
+}
+
+.message {
+    background-image: url(assets/images/message.png);
+}
+
+.setting {
+    background-image: url(assets/images/setting.png);
+}
+
+.sign {
+    background-image: url(assets/images/signin.png);
+}
+
+.message .unread {
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+}
+
+.icon {
+    background-color: rgb(150, 160, 210);
+    background-image: url(assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    position: absolute;
+    left: 387.5px;
+    bottom: 287.5px;
+}
+
+/*all animation*/
+
+#button:hover .icon {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    background-image: url(assets/images/atplus_green.png);
+    background-size: 75% 55%;
+    background-color: rgba(48, 63, 159, 1);
+}
+
+#button .icon {
+    transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
+}
+
+#button:hover #info-bar {
+    transform : translate(0, -101.5px) scale(1);
+    -moz-transform: translate(0, -101.5px) scale(1);
+    -webkit-transform: translate(0, -101.5px) scale(1);
+}
+
+#button:hover .sign {
+    transform: translate(20px, 60px) scale(1);
+    -moz-transform: translate(20px, 60px) scale(1);
+    -webkit-transform: translate(20px, 60px) scale(1);
+}
+
+#button:hover .setting {
+    transform: translate(-24px, 64px) scale(1);
+    -moz-transform: translate(-24px, 64px) scale(1);
+    -webkit-transform: translate(-24px, 64px) scale(1);
+}
+
+#button:hover .message {
+    transform: translate(-60px, 40px) scale(1);
+    -moz-transform: translate(-60px, 40px) scale(1);
+    -webkit-transform: translate(-60px, 40px) scale(1);
+}
+
+#button:hover .history  {
+    transform: translate(-72px, 0px) scale(1);
+    -moz-transform: translate(-72px, 0px) scale(1);
+    -webkit-transform: translate(-72px, 0px) scale(1);
+}
+
+#button:hover .mask {
+    transform: translate(-60px, -36px) scale(1);
+    -moz-transform: translate(-60px, -36px) scale(1);
+    -webkit-transform: translate(-60px, -36px) scale(1);
+}
+
+#button:hover #info-bar, #button:hover .button  {
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+    opacity: 1;
+}
+
+#button #info-bar, #button .button {
+    transform: translate(0) scale(0);
+    -moz-transform: translate(0) scale(0);
+    -webkit-transform: translate(0) scale(0);
+    transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration:1s;
+    opacity: 0;
+}
