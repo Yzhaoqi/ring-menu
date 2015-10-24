@@ -20,8 +20,8 @@ li {
     -moz-border-radius: 64px;
     -webkit-border-radius: 64px;
     position: absolute;
-    left: 348.5px;
-    bottom: 248.5px;
+    left: 561px;
+    bottom: 161px;
 }
 
 #info-bar ul {
@@ -72,8 +72,8 @@ li {
     -moz-border-radius: 16px;
     -webkit-border-radius: 16px;
     position: absolute;
-    left: 396.5px;
-    bottom: 296.5px;
+    left: 609px;
+    bottom: 209px;
 }
 
 /*every list background-image*/
@@ -125,8 +125,8 @@ li {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     position: absolute;
-    left: 387.5px;
-    bottom: 287.5px;
+    left: 600px; /*+212.5*/
+    bottom: 200px; /*-87.5*/
 }
 
 /*all animation*/
@@ -198,9 +198,9 @@ li {
     transition-duration: 1s;
     -moz-transition-duration: 1s;
     -webkit-transition-duration:1s;
-    transition-delay: 0.5s;
-    -moz-transition-delay: 0.5s;
-    -webkit-transition-delay: 0.5s;
+    transition-delay: 0;
+    -moz-transition-delay: 0;
+    -webkit-transition-delay: 0;
     opacity: 1;
 }
 

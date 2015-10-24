@@ -20,8 +20,8 @@ li {
     -moz-border-radius: 64px;
     -webkit-border-radius: 64px;
     position: absolute;
-    left: 288.5px;      /*original-left 348.5*/
-    bottom: 284.5px;    /*original-buttom 248.5*/
+    left: 501px;      /*original-left 348.5*/
+    bottom: 197px;    /*original-buttom 248.5*/
 }
 
 #info-bar ul {
@@ -77,32 +77,32 @@ li {
 /*every list background-image*/
 .mask {
     background-image: url(assets/images/nomask.png);
-    left: 324.5px;
-    bottom: 296.5px;
+    left: 537px;
+    bottom: 209px;
 }
 
 .history {
     background-image: url(assets/images/history.png);
-    left: 336.5px;
-    bottom: 256.5px;
+    left: 549px;
+    bottom: 169px;
 }
 
 .message {
     background-image: url(assets/images/message.png);
-    left: 372.5px;
-    bottom: 232.5px;
+    left: 585px;
+    bottom: 145px;
 }
 
 .setting {
     background-image: url(assets/images/setting.png);
-    left: 416.5px;
-    bottom: 236.5px;
+    left: 629px;
+    bottom: 149px;
 }
 
 .sign {
     background-image: url(assets/images/signin.png);
-    left: 416.5px;
-    bottom: 236.5px;
+    left: 629px;
+    bottom: 149px;
 }
 
 .message .unread {
@@ -132,8 +132,8 @@ li {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     position: absolute;
-    left: 387.5px;
-    bottom: 287.5px;
+    left: 600px;
+    bottom: 200px;
 }
 
 /*all animation*/
@@ -142,9 +142,9 @@ li {
     transform: scale(1);
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
-    transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -webkit-transition-duration:1s;
+    transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
     transition-delay: 0s;
     -moz-transition-delay: 0s;
     -webkit-transition-delay: 0s;
@@ -157,21 +157,21 @@ li {
     transform: scale(0.5);
     -moz-transform: scale(0.5);
     -webkit-transform: scale(0.5);
-    transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -webkit-transition-duration:1s;
-    transition-delay: 2.6s;
-    -moz-transition-delay: 2.6s;
-    -webkit-transition-delay: 2.6s;
+    transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    transition-delay: 1.6s;
+    -moz-transition-delay: 1.6s;
+    -webkit-transition-delay: 1.6s;
 }
 
 #button:hover #info-bar {
     transform : translate(60px, -64.5px) scale(1);
     -moz-transform: translate(60px, -64.5px) scale(1);
     -webkit-transform: translate(60px, -64.5px) scale(1);
-    transition-delay: 2.6s;
-    -moz-transition-delay: 2.6s;
-    -webkit-transition-delay: 2.6s;
+    transition-delay: 1.0s;
+    -moz-transition-delay: 1.0s;
+    -webkit-transition-delay: 1.0s;
 }
 
 #info-bar {
@@ -184,75 +184,75 @@ li {
     transform: translate(0) scale(1);
     -moz-transform: translate(0) scale(1);
     -webkit-transform: translate(0) scale(1);
-    transition-delay: 0.6s;
-    -moz-transition-delay: 0.6s;
-    -webkit-transition-delay: 0.6s;
+    transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
 }
 
 .sign {
-    transition-delay: 2.0s;
-    -moz-transition-delay: 2.0s;
-    -webkit-transition-delay: 2.0s;
+    transition-delay: 1.0s;
+    -moz-transition-delay: 1.0s;
+    -webkit-transition-delay: 1.0s;
 }
 
 #button:hover .setting {
     transform: translate(-44px, 4px) scale(1);
     -moz-transform: translate(-44px, 4px) scale(1);
     -webkit-transform: translate(-44px, 4px) scale(1);
-    transition-delay: 1.0s;
-    -moz-transition-delay: 1.0s;
-    -webkit-transition-delay: 1.0s;
+    transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
 }
 
 .setting {
-    transition-delay: 1.6s;
-    -moz-transition-delay: 1.6s;
-    -webkit-transition-delay: 1.6s;
+    transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
 }
 
 #button:hover .message {
     transform: translate(-36px, -24px) scale(1);
     -moz-transform: translate(-36px, -24px) scale(1);
     -webkit-transform: translate(-36px, -24px) scale(1);
-    transition-delay: 1.4s;
-    -moz-transition-delay: 1.4s;
-    -webkit-transition-delay: 1.4s;
+    transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s;
 }
 
 .message {
-    transition-delay: 1.2s;
-    -moz-transition-delay: 1.2s;
-    -webkit-transition-delay: 1.2s;
+    transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -webkit-transition-delay: 0.6s;
 }
 
 #button:hover .history  {
     transform: translate(-12px, -40px) scale(1);
     -moz-transform: translate(-12px, -40px) scale(1);
     -webkit-transform: translate(-12px, -40px) scale(1);
-    transition-delay: 1.8s;
-    -moz-transition-delay: 1.8s;
-    -webkit-transition-delay: 1.8s;
+    transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -webkit-transition-delay: 0.6s;
 }
 
 .history {
-    transition-delay: 0.8s;
-    -moz-transition-delay: 0.8s;
-    -webkit-transition-delay: 0.8s;
+    transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s;
 }
 
 #button:hover .mask {
     transform: translate(12px, -36px) scale(1);
     -moz-transform: translate(12px, -36px) scale(1);
     -webkit-transform: translate(12px, -36px) scale(1);
-    transition-delay: 2.2s;
-    -moz-transition-delay: 2.2s;
-    -webkit-transition-delay: 2.2s;
+    transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -webkit-transition-delay: 0.8s;
 }
 
 .mask {
-    transition-delay: 0.4s;
-    -moz-transition-delay: 0.4s;
-    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -webkit-transition-delay: 0.2s;
 }
 
 #button:hover #info-bar, #button:hover .button  {
